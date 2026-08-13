@@ -7,3 +7,4 @@ Built with HTML, CSS and JavaScript.
 
 ## Skills
 HTML | CSS | JavaScript | C | C++ | DSA | Problem Solving
+Last Upadated : August 2026
