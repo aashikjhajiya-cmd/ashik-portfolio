@@ -5,16 +5,27 @@
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-padding-top: 80px;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     background: #0b1120;
     color: #ffffff;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
 }
 
 span {
@@ -36,10 +47,10 @@ header {
 .navbar {
     max-width: 1200px;
     margin: auto;
-    padding: 20px;
+    padding: 18px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -63,14 +74,15 @@ header {
     transition: 0.3s;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
     color: #00d9ff;
 }
 
 .menu-btn {
     display: none;
     border: none;
-    background: none;
+    background: transparent;
     color: white;
     font-size: 28px;
     cursor: pointer;
@@ -101,7 +113,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 50px;
 }
 
 .hero-content {
@@ -135,7 +147,7 @@ header {
     max-width: 600px;
 }
 
-/* HERO PHOTO */
+/* PHOTO */
 
 .hero-photo {
     width: 320px;
@@ -167,11 +179,12 @@ header {
     border-radius: 50%;
 }
 
-/* HERO BUTTONS */
+/* BUTTONS */
 
 .hero-buttons {
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 12px;
     margin-top: 30px;
 }
 
@@ -179,7 +192,7 @@ header {
     display: inline-block;
     background: #00d9ff;
     color: #06101c;
-    padding: 12px 25px;
+    padding: 12px 22px;
     border-radius: 6px;
     font-weight: 600;
     border: 2px solid #00d9ff;
@@ -190,6 +203,7 @@ header {
 .btn:hover {
     background: transparent;
     color: #00d9ff;
+    transform: translateY(-2px);
 }
 
 .outline-btn {
@@ -201,19 +215,21 @@ header {
 
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 12px;
     margin-top: 25px;
 }
 
 .social-links a {
-    width: 42px;
+    min-width: 42px;
     height: 42px;
+    padding: 0 10px;
     border: 1px solid #00d9ff;
-    border-radius: 50%;
+    border-radius: 50px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     color: white;
+    font-size: 13px;
     transition: 0.3s;
 }
 
@@ -222,7 +238,7 @@ header {
     color: #06101c;
 }
 
-/* SECTIONS */
+/* SECTION */
 
 .section {
     max-width: 1200px;
@@ -232,10 +248,10 @@ header {
 
 .section-title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 }
 
-.section-title p {
+.section-title > p {
     color: #00d9ff;
     font-size: 15px;
 }
@@ -290,35 +306,35 @@ header {
     padding: 25px;
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 15px;
     transition: 0.3s;
 }
 
 .info-card:hover {
-    transform: translateY(-5px);
     border-color: #00d9ff;
+    transform: translateY(-5px);
 }
 
 .info-icon {
-    color: #00d9ff;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .info-card h3 {
-    font-size: 17px;
-    margin-bottom: 4px;
+    font-size: 16px;
+    margin-bottom: 3px;
 }
 
 .info-card p {
     color: #b8c0d0;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 /* SKILLS */
 
-.skills-section {
-    background: #0e1728;
+.skills-section,
+.education-section {
     max-width: 100%;
+    background: #0e1728;
 }
 
 .skills-container {
@@ -339,22 +355,22 @@ header {
 }
 
 .skill-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-7px);
     border-color: #00d9ff;
 }
 
 .skill-icon {
     width: 60px;
     height: 60px;
-    margin: 0 auto 18px;
+    margin: 0 auto 17px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
     background: #00d9ff;
     color: #06101c;
+    border-radius: 10px;
+    font-size: 12px;
     font-weight: 700;
-    font-size: 14px;
 }
 
 .skill-card h3 {
@@ -385,20 +401,19 @@ header {
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-7px);
     border-color: #00d9ff;
 }
 
 .project-number {
     color: #00d9ff;
-    font-size: 18px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .project-card h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 21px;
+    margin-bottom: 12px;
 }
 
 .project-card p {
@@ -410,15 +425,15 @@ header {
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 7px;
     margin-bottom: 20px;
 }
 
 .project-tags span {
     background: #17243b;
-    padding: 5px 10px;
+    padding: 5px 9px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .project-link {
@@ -427,11 +442,6 @@ header {
 }
 
 /* EDUCATION */
-
-.education-section {
-    background: #0e1728;
-    max-width: 100%;
-}
 
 .education-card {
     max-width: 1160px;
@@ -542,7 +552,6 @@ textarea {
     color: white;
     border: 1px solid #1d2a42;
     border-radius: 7px;
-    font-family: inherit;
     outline: none;
 }
 
@@ -555,8 +564,10 @@ textarea {
     resize: vertical;
 }
 
-form .btn {
-    align-self: flex-start;
+#formMessage {
+    display: none;
+    color: #00d9ff;
+    font-size: 14px;
 }
 
 /* FOOTER */
@@ -587,10 +598,6 @@ footer p {
     color: #00d9ff;
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
 .copyright {
     margin-top: 20px;
 }
@@ -598,8 +605,9 @@ footer p {
 /* TABLET */
 
 @media (max-width: 1000px) {
+
     .hero {
-        gap: 35px;
+        gap: 30px;
     }
 
     .hero-photo {
@@ -620,6 +628,7 @@ footer p {
 /* TABLET */
 
 @media (max-width: 900px) {
+
     .hero {
         flex-direction: column-reverse;
         text-align: center;
@@ -630,10 +639,7 @@ footer p {
         max-width: 700px;
     }
 
-    .hero-buttons {
-        justify-content: center;
-    }
-
+    .hero-buttons,
     .social-links {
         justify-content: center;
     }
@@ -655,6 +661,7 @@ footer p {
 /* MOBILE */
 
 @media (max-width: 650px) {
+
     .navbar {
         padding: 15px 20px;
     }
@@ -690,7 +697,6 @@ footer p {
 
     .hero {
         padding: 110px 20px 60px;
-        gap: 30px;
     }
 
     .hero h1 {
@@ -746,11 +752,16 @@ footer p {
     .career-content h2 {
         font-size: 30px;
     }
+
+    .contact-container {
+        gap: 30px;
+    }
 }
 
 /* SMALL MOBILE */
 
 @media (max-width: 400px) {
+
     .hero h1 {
         font-size: 38px;
     }
