@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ashik Jatav - Aspiring Frontend Developer">
+
+    <meta name="description" content="Ashik Jatav - Aspiring Frontend Developer Portfolio">
+    <meta name="author" content="Ashik Jatav">
+
     <title>Ashik Jatav | Frontend Developer</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +21,9 @@
             Ashik<span>.</span>
         </a>
 
-        <button class="menu-btn" id="menuBtn">☰</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+            ☰
+        </button>
 
         <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
@@ -31,10 +34,15 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <a href="#contact" class="hire-btn">Hire Me</a>
+        <a href="#contact" class="hire-btn">
+            Hire Me
+        </a>
 
     </nav>
 </header>
+
+
+<!-- HERO -->
 
 <section class="hero" id="home">
 
@@ -59,39 +67,62 @@
         <div class="hero-buttons">
 
             <a href="#projects" class="btn">
-                View Projects
-                <span class="arrow">→</span>
+                View Projects →
+            </a>
+
+            <a href="resume.pdf"
+               download="Ashik-Jatav-Resume.pdf"
+               class="btn resume-btn">
+                Download Resume
             </a>
 
             <a href="#contact" class="btn outline-btn">
                 Contact Me
-                <span class="contact-icon">♙</span>
             </a>
 
         </div>
 
         <div class="social-links">
 
-            <a href="#" aria-label="GitHub">Git</a>
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Instagram">◎</a>
-            <a href="#" aria-label="Email">@</a>
+            <a href="https://github.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="GitHub">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="LinkedIn">
+                in
+            </a>
+
+            <a href="mailto:your-email@example.com"
+               aria-label="Email">
+                @
+            </a>
 
         </div>
 
     </div>
 
+
     <div class="hero-photo">
 
         <div class="photo-ring">
 
-           <img src="profile.jpg" alt="Ashik Jatav">
+            <img src="profile.jpg"
+                 alt="Ashik Jatav">
 
         </div>
 
     </div>
 
 </section>
+
+
+<!-- ABOUT -->
 
 <section class="section" id="about">
 
@@ -106,6 +137,7 @@
         <div class="title-line"></div>
 
     </div>
+
 
     <div class="about-container">
 
@@ -138,34 +170,42 @@
 
         </div>
 
+
         <div class="about-cards">
 
             <div class="info-card">
                 <div class="info-icon">🎓</div>
+
                 <div>
                     <h3>Education</h3>
                     <p>B.Tech CSE</p>
                 </div>
             </div>
 
+
             <div class="info-card">
-                <div class="info-icon">▣</div>
+                <div class="info-icon">📅</div>
+
                 <div>
                     <h3>Year</h3>
                     <p>2nd Year</p>
                 </div>
             </div>
 
+
             <div class="info-card">
-                <div class="info-icon">▦</div>
+                <div class="info-icon">🏫</div>
+
                 <div>
                     <h3>College</h3>
                     <p>Jaipur Engineering College, Kukas</p>
                 </div>
             </div>
 
+
             <div class="info-card">
                 <div class="info-icon">&lt;/&gt;</div>
+
                 <div>
                     <h3>Interest</h3>
                     <p>Frontend Development</p>
@@ -177,6 +217,9 @@
     </div>
 
 </section>
+
+
+<!-- SKILLS -->
 
 <section class="section skills-section" id="skills">
 
@@ -192,43 +235,50 @@
 
     </div>
 
+
     <div class="skills-container">
 
         <div class="skill-card">
-            <div class="skill-icon">5</div>
+            <div class="skill-icon">HTML</div>
             <h3>HTML</h3>
-            <p>Structuring content and creating semantic web pages.</p>
+            <p>Creating structured and semantic web pages.</p>
         </div>
 
+
         <div class="skill-card">
-            <div class="skill-icon">#</div>
+            <div class="skill-icon">CSS</div>
             <h3>CSS</h3>
-            <p>Styling websites and making them responsive.</p>
+            <p>Creating attractive and responsive designs.</p>
         </div>
+
 
         <div class="skill-card">
             <div class="skill-icon">JS</div>
             <h3>JavaScript</h3>
-            <p>Adding interactivity and functionality to websites.</p>
+            <p>Adding interaction and functionality to websites.</p>
         </div>
+
 
         <div class="skill-card">
             <div class="skill-icon">C</div>
             <h3>C Programming</h3>
-            <p>Programming fundamentals, logic building and coding.</p>
+            <p>Programming fundamentals and logic building.</p>
         </div>
+
 
         <div class="skill-card">
             <div class="skill-icon">C++</div>
             <h3>C++ & DSA</h3>
-            <p>Data structures, algorithms and logical problem solving.</p>
+            <p>Data structures, algorithms and problem solving.</p>
         </div>
+
 
         <div class="skill-card">
             <div class="skill-icon">EX</div>
             <h3>MS Excel</h3>
-            <p>Formulas, functions, tables and spreadsheet management.</p>
+            <p>Formulas, functions, tables and spreadsheets.</p>
         </div>
+
 
         <div class="skill-card">
             <div class="skill-icon">PS</div>
@@ -239,6 +289,9 @@
     </div>
 
 </section>
+
+
+<!-- PROJECTS -->
 
 <section class="section" id="projects">
 
@@ -254,7 +307,9 @@
 
     </div>
 
+
     <div class="projects-container">
+
 
         <div class="project-card">
 
@@ -263,8 +318,8 @@
             <h3>Personal Portfolio</h3>
 
             <p>
-                A responsive personal portfolio website created to
-                showcase my skills, education and projects.
+                A responsive personal portfolio website created using
+                HTML, CSS and JavaScript.
             </p>
 
             <div class="project-tags">
@@ -273,21 +328,22 @@
                 <span>JavaScript</span>
             </div>
 
-            <a href="#" class="project-link">
+            <a href="#home" class="project-link">
                 View Project →
             </a>
 
         </div>
+
 
         <div class="project-card">
 
             <div class="project-number">02</div>
 
-            <h3>Frontend Web Project</h3>
+            <h3>Car Game</h3>
 
             <p>
-                A responsive frontend website focused on clean design,
-                usability and mobile-friendly layout.
+                A browser-based car game with responsive controls and
+                interactive JavaScript functionality.
             </p>
 
             <div class="project-tags">
@@ -296,11 +352,12 @@
                 <span>JavaScript</span>
             </div>
 
-            <a href="#" class="project-link">
+            <a href="#contact" class="project-link">
                 View Project →
             </a>
 
         </div>
+
 
         <div class="project-card">
 
@@ -309,8 +366,8 @@
             <h3>DSA Practice</h3>
 
             <p>
-                Practicing data structures and algorithms using C++
-                to improve logical thinking and problem-solving skills.
+                Practicing Data Structures and Algorithms using C++
+                to improve logical thinking and problem solving.
             </p>
 
             <div class="project-tags">
@@ -318,8 +375,8 @@
                 <span>DSA</span>
             </div>
 
-            <a href="#" class="project-link">
-                View Project →
+            <a href="#skills" class="project-link">
+                View Skills →
             </a>
 
         </div>
@@ -327,6 +384,9 @@
     </div>
 
 </section>
+
+
+<!-- EDUCATION -->
 
 <section class="section education-section" id="education">
 
@@ -341,6 +401,7 @@
         <div class="title-line"></div>
 
     </div>
+
 
     <div class="education-card">
 
@@ -364,7 +425,7 @@
 
             <p>
                 Currently pursuing B.Tech in Computer Science Engineering
-                and developing my technical skills in frontend development,
+                and developing technical skills in frontend development,
                 programming, data structures and problem solving.
             </p>
 
@@ -373,6 +434,9 @@
     </div>
 
 </section>
+
+
+<!-- CAREER -->
 
 <section class="career-section">
 
@@ -398,6 +462,9 @@
 
 </section>
 
+
+<!-- CONTACT -->
+
 <section class="section" id="contact">
 
     <div class="section-title">
@@ -412,26 +479,46 @@
 
     </div>
 
+
     <div class="contact-container">
+
 
         <div class="contact-info">
 
             <div class="contact-box">
+
                 <h3>📧 Email</h3>
-                <p>your-email@example.com</p>
+
+                <p>
+                    your-email@example.com
+                </p>
+
             </div>
 
+
             <div class="contact-box">
+
                 <h3>📱 Phone</h3>
-                <p>+91 XXXXX XXXXX</p>
+
+                <p>
+                    +91 XXXXX XXXXX
+                </p>
+
             </div>
 
+
             <div class="contact-box">
+
                 <h3>📍 Location</h3>
-                <p>Jaipur, Rajasthan, India</p>
+
+                <p>
+                    Jaipur, Rajasthan, India
+                </p>
+
             </div>
 
         </div>
+
 
         <form id="contactForm">
 
@@ -463,15 +550,22 @@
                 required
             ></textarea>
 
-            <button type="submit" class="btn">
+            <button
+                type="submit"
+                class="btn">
                 Send Message
             </button>
+
+            <p id="formMessage"></p>
 
         </form>
 
     </div>
 
 </section>
+
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -484,14 +578,31 @@
     </p>
 
     <div class="footer-links">
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Instagram</a>
+
+        <a href="https://github.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+            LinkedIn
+        </a>
+
+        <a href="mailto:your-email@example.com">
+            Email
+        </a>
+
     </div>
 
-    <p class="copyright"></p>
+    <p class="copyright">
+        © <span id="year"></span> Ashik Jatav. All Rights Reserved.
+    </p>
 
 </footer>
+
 
 <script src="script.js"></script>
 
